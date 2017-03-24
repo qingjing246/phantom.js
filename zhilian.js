@@ -48,7 +48,7 @@ function ptm(url) {
                 //var experience = document.getElementsByClassName('li_b_l')[i].lastChild.nodeValue;
                 var money = document.getElementsByClassName('zwyx')[i].innerText;
                 var companyName = div[i].querySelector('a').innerText;
-                var url = div[i].getElementsByTagName('a')[0].herf;
+                var url = div[i].getElementsByTagName('a')[0].href;
                 arr.push({
                     job: h2,
                     add: address,
@@ -57,6 +57,7 @@ function ptm(url) {
                     // experience: experience.replace(/\s/g, ""),
                     company: companyName.replace(/[\[]|[\]]/g, ""),
                     url: url
+
                 });
 
             }
@@ -86,7 +87,7 @@ function ptm(url) {
         } else if (number > totalPage) {
             console.log('第' + number + '页');
 
-            console.log(JSON.stringify(arr1, undefined, 4));
+            //console.log(JSON.stringify(arr1, undefined, 4));
             fs.write(mypath, JSON.stringify(arr1, undefined, 4), 'a');
             t = new Date() - t;
             console.log('使用时间:' + t * 0.001 + '秒');

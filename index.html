@@ -2,61 +2,158 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-
     <title></title>
-    <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 </head>
-<body>
-    <ul id="list">
+<style>
+    body, li, ul {
+        margin: 0;
+        padding: 0;
+    }
 
+    header {
+        width: 100%;
+        background: rgba(160, 160, 160, 1);
+    }
+
+    ul {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        font-size: 30px;
+        text-align: center;
+        margin: 0 50px;
+        cursor: pointer;
+        padding: 0 50px;
+    }
+
+    li:hover {
+        background: brown;
+    }
+
+    tbody {
+        background: #A09D6C;
+    }
+
+</style>
+<body>
+<header>
+    <ul class="nav">
+        <li class="laGou">拉勾</li>
+        <li class="zhiLian">智联</li>
+        <li class="boss">BOOS直聘</li>
     </ul>
+</header>
+<div class="box">
+    <table class="list" border="1" align="center">
+        <tr>
+            <th>
+                地址
+            </th>
+            <th>
+                职位
+            </th>
+            <th>
+                薪资
+            </th>
+            <th>
+                经验
+            </th>
+            <th>
+                发布时间
+            </th>
+            <th>
+                公司
+            </th>
+        </tr>
+    </table>
+</div>
 </body>
 <script>
-    /*$(document).ready(function (){
-        var company = [];
-        var add = [];
-        var experience = [];
-        var job = [];
-        var money = [];
-        var timer = [];
-        var url = [];
-
-        var all = {
-                a : company,
-                b : add,
-                c : experience,
-                d : job,
-                e : money,
-                f : timer,
-                g : url
-                };
-
-
-        $('#list').append('<li>'+all.a+'</li>>');
-
-
-        console.log(company);
-
-
-
-        $.ajax({
-            type: 'GET',
-            url: 'aa.json',
-            dataType: 'json',
-            success: function (data) {
-                $.each(data, function (i, n) {
-                    company.push(n["company"]);
-                    add.push(n["add"]);
-                    experience.push(n["experience"]);
-                    job.push(n["job"]);
-                    money.push(n["money"]);
-                    timer.push(n["timer"]);
-                    url.push(n["url"]);
-                });
+    var li = document.getElementsByTagName('li');
+    var table = document.getElementsByClassName('list')[0];
+    var dele = document.getElementsByClassName('delete');
+    var data;
+    var pageName = 'aa';
+    var pageZL = 'zhiliandata';
+    laGou(pageName);
+    for(var i = 0;i<li.length;i++){
+        li[i].index = i ;
+        li[i].onclick = function (){
+            console.log(this.index);
+            switch (this.index){
+                case 0:
+                    laGou(pageName);
+                    break;
+                case 1:
+                    laGou(pageZL);
+                    break;
             }
-        })
+        }
+    }
 
 
-    });*/
+
+
+    function laGou(name) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.status = 200) {
+                if (xhr.readyState = 4) {
+                    data = JSON.parse(xhr.responseText);
+                }
+            }
+        };
+        xhr.open('GET', ''+name+'.json', false);
+        xhr.send();
+
+        creat();
+
+    }
+
+
+    function creat() {
+
+        for (var i = 0; i < data.length; i++) {
+            var tr = document.createElement('tr');
+            tr.className = 'delete';
+            if (i % 2 == 0) {
+                tr.style.background = '#D9D9D9';
+            } else {
+                tr.style.background = '#BFBFBF';
+            }
+            table.append(tr);
+            var tdAdd = document.createElement('td');
+            var tdJob = document.createElement('td');
+            var tdMoney = document.createElement('td');
+            var tdYear = document.createElement('td');
+            var tdTime = document.createElement('td');
+            var tdCompany = document.createElement('td');
+            var a = document.createElement('a');
+            a.href = data[i].url;
+            a.innerText = data[i].company;
+            a.target = "view,window";
+            tdAdd.innerText = data[i].add;
+            tdJob.innerText = data[i].job;
+            tdMoney.innerText = data[i].money;
+            tdTime.innerHTML = data[i].timer;
+            tdYear == 'undefined' ? tdYear.innerText = data[i].experience : tdYear.innerText = '没有信息';
+            tdAdd.align = 'center';
+            tdJob.align = 'center';
+            tdMoney.align = 'center';
+            tdYear.align = 'center' ;
+            tdTime.align = 'center';
+            tdCompany.align = 'center';
+            tr.append(tdAdd, tdJob, tdMoney, tdYear, tdTime, tdCompany);
+            tdCompany.append(a);
+        }
+    }
 </script>
 </html>

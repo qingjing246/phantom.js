@@ -19,7 +19,7 @@ page.open(url, function (status) {
         var m = '';
         var n = document.getElementsByClassName('page_no').length;
         var a = document.getElementsByClassName('page_no')[n - 2].innerHTML;
-        m += a;
+        m = 5;
 
         return m;
     });
