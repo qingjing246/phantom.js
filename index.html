@@ -86,9 +86,9 @@
     var userName = '';
 
     //设置三个文件名字
-    var pageLg = 'laGouData';
-    var pageZL = 'zhiLianData';
-    var pageBoss = 'bossData';
+    var pageLg = 'lagoudata';
+    var pageZL = 'zhiliandata';
+    var pageBoss = 'bossdata';
 
 
     //初始化页面
@@ -98,7 +98,7 @@
     hide(pageZL);
     hide(pageBoss);
 
-            //导航栏添加点击事件
+    //导航栏添加点击事件
     for (var i = 0; i < li.length; i++) {
 
         li[i].index = i;
@@ -127,7 +127,7 @@
         }
     }
 
-                //隐藏
+    //隐藏
     function hide(name) {
 
         var allTd = document.getElementsByClassName(name);
@@ -137,7 +137,8 @@
             allTd[i].style.display = 'none';
         }
     }
-                //显示
+
+    //显示
     function show(name) {
         var allTd = document.getElementsByClassName(name);
 
@@ -164,7 +165,7 @@
         //根据传入的参数，加载对应数据
         userName = name;
 
-        xhr.open('GET',  name + '.json', false);
+        xhr.open('GET', '' + name + '.json', false);
         xhr.send();
 
         //执行create函数
