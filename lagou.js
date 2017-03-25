@@ -9,7 +9,7 @@ var data = [];
 //设置初始网页地址
 var url = 'https://www.lagou.com/zhaopin/qianduankaifa/1/?filterOption=3';
 
-phantom.outputEncoding = "gb2312";
+phantom.outputEncoding = "utf-8";
 
 //获取总页数
 //打开页面

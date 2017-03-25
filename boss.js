@@ -9,7 +9,7 @@ var data = [];
 //设置初始网页地址
 var url = 'http://www.zhipin.com/c101270100-p100205/?page=1&ka=page-1';
 
-phantom.outputEncoding = "gb2312";
+phantom.outputEncoding = "utf-8";
 
 //获取总页数
 //打开页面

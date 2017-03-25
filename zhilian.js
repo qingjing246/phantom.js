@@ -12,7 +12,8 @@ var data = [];
 
 //设置初始网页地址
 var url = 'http://sou.zhaopin.com/jobs/searchresult.ashx?bj=160000&sj=864&jl=%E6%88%90%E9%83%BD&sm=0&p=1&source=0';
-phantom.outputEncoding = "gb2312";
+
+phantom.outputEncoding = "utf-8";
 
 //获取总页数
 //打开页面
