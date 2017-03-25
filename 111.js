@@ -1,7 +1,7 @@
 var page =require('webpage').create();
 var address='http://product.pconline.com.cn/server/';
 var fs = require('fs');
-var mypath = 'aa.json';
+var mypath = 'lagoudata.json';
 var count = 2;
 var pageSize=0;
 phantom.outputEncoding="gbk";

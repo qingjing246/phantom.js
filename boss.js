@@ -1,10 +1,11 @@
 var page = require('webpage').create();
 var fs = require('fs');
-var mypath = 'lagoudata.json';
+var mypath = 'bossdata.json';
 var totalPage = 0;
 var number = 2;
 var t = new Date();
 var arr1 = [];
+//var url = 'http://www.zhipin.com/c101270100-p100205/?page=1&ka=page-1';
 var url = 'https://www.lagou.com/zhaopin/qianduankaifa/1/?filterOption=3';
 phantom.outputEncoding = "gb2312";
 
@@ -17,8 +18,8 @@ page.open(url, function (status) {
     totalPage = page.evaluate(function () {
         //找到总页数节点
         var m = '';
-        var n = document.getElementsByClassName('page_no').length;
-        var a = document.getElementsByClassName('page_no')[n - 2].innerHTML;
+        //var n = document.getElementsByClassName('page_no').length;
+        //var a = document.getElementsByClassName('page_no')[n - 2].innerHTML;
         m = 5;
 
         return m;
@@ -34,33 +35,40 @@ function ptm(url) {
 
     page.open(url, function (status) {
         console.log(status);
+
         var cont = '';
         cont = page.evaluate(function () {
+            /*
             var arr = [];
-            var div = document.getElementsByClassName('p_top');
+            var div = document.getElementsByClassName('job-primary');
             for (var i = 0; i < div.length; i++) {
-                var h2 = div[i].getElementsByTagName('h2')[0].innerHTML;
-                var address = document.getElementsByClassName('add')[i].innerText;
-                var time = document.getElementsByClassName('format-time')[i].innerText;
-                var experience = document.getElementsByClassName('li_b_l')[i].lastChild.nodeValue;
-                var money = document.getElementsByClassName('money')[i].innerText;
-                var companyName = document.getElementsByClassName('company_name')[i].innerText;
-                var url = document.getElementsByClassName('position_link')[i].href;
+                var job = info[i].getElementsByClassName('name')[i].firstChild.nodeValue
+                var info = document.getElementsByClassName('info-primary');
+                var address = info[i].getElementsByTagName('p')[0].firstChild.nodeValue;
+                var time = document.getElementsByClassName('time')[i].innerText;
+                var experience = info[i].getElementsByTagName('p')[0].childNodes[2];
+                var money = document.getElementsByClassName('red')[i].innerText;
+                var company-text = document.getElementsByClassName('company-text');
+                var companyName = company-text[i].getElementsByClassName('name')[i].innerText;
+                var url = div[i].parentNode.href;
                 arr.push({
-                    job: h2,
+                    job: job,
                     add: address,
                     timer: time,
                     money: money,
-                    experience: experience.replace(/\s/g, ""),
-                    company: companyName.replace(/[\[]|[\]]/g, ""),
+                    experience: experience,
+                    company: companyName,
                     url: url
                 });
 
             }
             return arr;
+            */
         });
-        arr1 = arr1.concat(cont);
-        //console.log(JSON.stringify(arr1, undefined, 4));
+       // arr1 = arr1.concat(cont);
+       // console.log(JSON.stringify(arr1, undefined, 4));
+
+        /*
         // console.log(arr1.concat(cont));
         //fs.write(mypath, JSON.stringify(cont, undefined, 4), 'a');
 
@@ -68,8 +76,8 @@ function ptm(url) {
 
         var nextUrl = page.evaluate(function () {
             var url = '';
-            var n = document.getElementsByClassName('page_no').length;
-            var nextPage = document.getElementsByClassName('page_no')[n - 1];
+            var n = document.getElementsByClassName('page')[0];
+            var nextPage = n.getElementsByTagName('a')[4].href;
             url += nextPage;
             return url;
         });
@@ -88,6 +96,8 @@ function ptm(url) {
             console.log('使用时间:' + t * 0.001 + '秒');
             phantom.exit();
         }
+
+        */
     });
 }
 
