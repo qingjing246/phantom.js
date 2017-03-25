@@ -24,7 +24,7 @@ page.open(url, function (status) {
     totalPage = page.evaluate(function () {
 
         //设置需要加载的页数
-        var pageNumber = 10;
+        var pageNumber = 5;
         return pageNumber;
     });
 

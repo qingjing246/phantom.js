@@ -20,7 +20,7 @@ page.open(url, function (status) {
     totalPage = page.evaluate(function () {
 
         //设置需要获取的页数
-        var pageNumber = 10;
+        var pageNumber = 5;
         return pageNumber;
     });
 

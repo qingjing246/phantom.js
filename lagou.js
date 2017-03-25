@@ -24,7 +24,7 @@ page.open(url, function (status) {
 
         var a = document.getElementsByClassName('page_no')[n - 2].innerHTML;
 
-        return a;
+        return 5;
     });
 
     console.log('---------total page :'+totalPage+'---------');
