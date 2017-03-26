@@ -55,6 +55,15 @@
     },
     {
         "add": "成都",
+        "company": "开发成都",
+        "experience": "3-5年",
+        "job": "web前端开发 ",
+        "money": "10K-15K",
+        "timer": "发布于03月23日",
+        "url": "http://www.zhipin.com/job_detail/1410517110.html"
+    },
+    {
+        "add": "成都",
         "company": "洋玩易全球美食平台",
         "experience": "3-5年",
         "job": "web前端 ",
@@ -82,6 +91,15 @@
     },
     {
         "add": "成都",
+        "company": "丰巢科技",
+        "experience": "1-3年",
+        "job": "web前端 ",
+        "money": "10K-15K",
+        "timer": "发布于03月23日",
+        "url": "http://www.zhipin.com/job_detail/1410437869.html"
+    },
+    {
+        "add": "成都",
         "company": "文思海辉",
         "experience": "3-5年",
         "job": "支付宝蚂蚁安全web前端 ",
@@ -100,30 +118,12 @@
     },
     {
         "add": "成都",
-        "company": "开发成都",
-        "experience": "3-5年",
-        "job": "web前端开发 ",
-        "money": "10K-15K",
-        "timer": "发布于03月23日",
-        "url": "http://www.zhipin.com/job_detail/1410517110.html"
-    },
-    {
-        "add": "成都",
         "company": "童乐乐科技",
         "experience": "1-3年",
         "job": "Web前端开发工程师 ",
         "money": "10K-15K",
         "timer": "发布于03月23日",
         "url": "http://www.zhipin.com/job_detail/1410576982.html"
-    },
-    {
-        "add": "成都",
-        "company": "丰巢科技",
-        "experience": "1-3年",
-        "job": "web前端 ",
-        "money": "10K-15K",
-        "timer": "发布于03月23日",
-        "url": "http://www.zhipin.com/job_detail/1410437869.html"
     },
     {
         "add": "成都",
@@ -172,21 +172,21 @@
     },
     {
         "add": "成都",
-        "company": "远盟康健科技",
-        "experience": "3-5年",
-        "job": "web前端 ",
-        "money": "8K-12K",
-        "timer": "发布于03月20日",
-        "url": "http://www.zhipin.com/job_detail/1407348302.html"
-    },
-    {
-        "add": "成都",
         "company": "千胜",
         "experience": "经验不限",
         "job": "web前端实习生 ",
         "money": "8K-12K",
         "timer": "发布于03月20日",
         "url": "http://www.zhipin.com/job_detail/1410471750.html"
+    },
+    {
+        "add": "成都",
+        "company": "远盟康健科技",
+        "experience": "3-5年",
+        "job": "web前端 ",
+        "money": "8K-12K",
+        "timer": "发布于03月20日",
+        "url": "http://www.zhipin.com/job_detail/1407348302.html"
     },
     {
         "add": "成都",
@@ -244,21 +244,21 @@
     },
     {
         "add": "成都",
-        "company": "创客网络科技有限公司",
-        "experience": "经验不限",
-        "job": "web前端 ",
-        "money": "8K-12K",
-        "timer": "发布于03月20日",
-        "url": "http://www.zhipin.com/job_detail/1406808289.html"
-    },
-    {
-        "add": "成都",
         "company": "渔乐江湖",
         "experience": "3-5年",
         "job": "web前端 ",
         "money": "8K-12K",
         "timer": "发布于03月20日",
         "url": "http://www.zhipin.com/job_detail/1407288647.html"
+    },
+    {
+        "add": "成都",
+        "company": "创客网络科技有限公司",
+        "experience": "经验不限",
+        "job": "web前端 ",
+        "money": "8K-12K",
+        "timer": "发布于03月20日",
+        "url": "http://www.zhipin.com/job_detail/1406808289.html"
     },
     {
         "add": "成都",
@@ -325,6 +325,15 @@
     },
     {
         "add": "成都",
+        "company": "中云网眼",
+        "experience": "3-5年",
+        "job": "Web前端 ",
+        "money": "10K-19K",
+        "timer": "发布于03月23日",
+        "url": "http://www.zhipin.com/job_detail/1406584247.html"
+    },
+    {
+        "add": "成都",
         "company": "冷云能源",
         "experience": "3-5年",
         "job": "Web前端工程师 ",
@@ -358,15 +367,6 @@
         "money": "10K-19K",
         "timer": "发布于03月23日",
         "url": "http://www.zhipin.com/job_detail/1410557324.html"
-    },
-    {
-        "add": "成都",
-        "company": "中云网眼",
-        "experience": "3-5年",
-        "job": "Web前端 ",
-        "money": "10K-19K",
-        "timer": "发布于03月23日",
-        "url": "http://www.zhipin.com/job_detail/1406584247.html"
     },
     {
         "add": "成都",
@@ -487,21 +487,21 @@
     },
     {
         "add": "成都",
-        "company": "Remark Media",
-        "experience": "3-5年",
-        "job": "Web前端工程师 ",
-        "money": "8K-12K",
-        "timer": "发布于02月27日",
-        "url": "http://www.zhipin.com/job_detail/1407182542.html"
-    },
-    {
-        "add": "成都",
         "company": "瑞盛资产",
         "experience": "3-5年",
         "job": "WEB前端 ",
         "money": "8K-12K",
         "timer": "发布于02月27日",
         "url": "http://www.zhipin.com/job_detail/1407232885.html"
+    },
+    {
+        "add": "成都",
+        "company": "Remark Media",
+        "experience": "3-5年",
+        "job": "Web前端工程师 ",
+        "money": "8K-12K",
+        "timer": "发布于02月27日",
+        "url": "http://www.zhipin.com/job_detail/1407182542.html"
     },
     {
         "add": "成都",
@@ -523,21 +523,21 @@
     },
     {
         "add": "成都",
-        "company": "兴创云联",
-        "experience": "经验不限",
-        "job": "web前端开发 ",
-        "money": "8K-12K",
-        "timer": "发布于02月27日",
-        "url": "http://www.zhipin.com/job_detail/1410636223.html"
-    },
-    {
-        "add": "成都",
         "company": "文思海辉",
         "experience": "3-5年",
         "job": "web前端 ",
         "money": "8K-12K",
         "timer": "发布于02月27日",
         "url": "http://www.zhipin.com/job_detail/1406940495.html"
+    },
+    {
+        "add": "成都",
+        "company": "兴创云联",
+        "experience": "经验不限",
+        "job": "web前端开发 ",
+        "money": "8K-12K",
+        "timer": "发布于02月27日",
+        "url": "http://www.zhipin.com/job_detail/1410636223.html"
     },
     {
         "add": "成都",
@@ -559,21 +559,21 @@
     },
     {
         "add": "成都",
-        "company": "快健科技",
-        "experience": "1年以内",
-        "job": "web前端 ",
-        "money": "6K-10K",
-        "timer": "发布于02月27日",
-        "url": "http://www.zhipin.com/job_detail/1404818737.html"
-    },
-    {
-        "add": "成都",
         "company": "四川融资信息网",
         "experience": "3-5年",
         "job": "Web前端 ",
         "money": "6K-10K",
         "timer": "发布于02月27日",
         "url": "http://www.zhipin.com/job_detail/1407150575.html"
+    },
+    {
+        "add": "成都",
+        "company": "快健科技",
+        "experience": "1年以内",
+        "job": "web前端 ",
+        "money": "6K-10K",
+        "timer": "发布于02月27日",
+        "url": "http://www.zhipin.com/job_detail/1404818737.html"
     },
     {
         "add": "成都",
@@ -631,21 +631,21 @@
     },
     {
         "add": "成都",
-        "company": "成都韦博",
-        "experience": "经验不限",
-        "job": "web前端工程师 ",
-        "money": "6K-10K",
-        "timer": "发布于02月27日",
-        "url": "http://www.zhipin.com/job_detail/1405322127.html"
-    },
-    {
-        "add": "成都",
         "company": "麦卓科技",
         "experience": "5-10年",
         "job": "web前端开发工程师 ",
         "money": "6K-10K",
         "timer": "发布于02月27日",
         "url": "http://www.zhipin.com/job_detail/1407225578.html"
+    },
+    {
+        "add": "成都",
+        "company": "成都韦博",
+        "experience": "经验不限",
+        "job": "web前端工程师 ",
+        "money": "6K-10K",
+        "timer": "发布于02月27日",
+        "url": "http://www.zhipin.com/job_detail/1405322127.html"
     },
     {
         "add": "成都",
