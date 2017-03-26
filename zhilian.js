@@ -3,7 +3,7 @@
  */
 var page = require('webpage').create();
 var fs = require('fs');
-var mypath = 'zhiliandata.json';
+var mypath = 'json/zhiliandata.json';
 var totalPage = 0;
 var number = 2;
 var t = new Date();

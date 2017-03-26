@@ -1,6 +1,6 @@
 var page = require('webpage').create();
 var fs = require('fs');
-var mypath = 'bossdata.json';
+var mypath = 'json/bossdata.json';
 var totalPage = 0;
 var number = 2;
 var t = new Date();

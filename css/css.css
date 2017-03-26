@@ -1,0 +1,51 @@
+body, li, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../img/bg.gif");
+}
+header {
+    width: 100%;
+    background: rgba(160, 160, 160, .5);
+    position: fixed;
+}
+
+ul {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 50px;
+    cursor: pointer;
+    padding: 0 50px;
+}
+
+li:hover {
+    background: brown;
+}
+
+tbody {
+    background: #A09D6C;
+}
+
+td {
+    min-width: 100px;
+}
+.git{
+    text-decoration: none;
+    color: black;
+
+}
+.box{
+    padding-top: 60px;
+}
